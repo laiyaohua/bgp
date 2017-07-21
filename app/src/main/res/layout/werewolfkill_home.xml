@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Werewolfkill.Activity.Activity.HomeActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_players"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="8"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/common_text_size"
+            android:background="@drawable/textview_bg"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人局"
+            android:textSize="@dimen/common_text_size"/>
+
+        <SeekBar
+            android:id="@+id/sb_hum_num"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:max="4"
+            android:progress="0"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/bt_conform"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="确 定"
+        android:textSize="@dimen/common_text_size"
+        android:textColor="@color/app_text_new_black"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="30dp"
+        android:background="@drawable/button_bg_selector"/>
+    <TextView
+        android:id="@+id/tv_role_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/common_text_size"
+        android:textColor="@color/app_text_new_black"
+        android:text="@string/role_num_introduction"/>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@mipmap/game_cover"
+        android:scaleType="fitXY"
+        android:layout_gravity="bottom|center_horizontal"
+        />
+</LinearLayout>

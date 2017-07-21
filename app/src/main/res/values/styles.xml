@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@mipmap/avelon_bg</item>
+    </style>
+
+    <style name="menuTextStyle" parent="@android:style/TextAppearance.Small">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@drawable/menu_text_color</item>
+    </style>
+
+    <style name="dialogTextStyle" parent="@android:style/TextAppearance.Small">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@drawable/menu_text_color</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="myMagicProgress">
+        <attr name="circleProgressRadus" format="dimension"/>
+        <attr name="horizonalProgressHeight" format="dimension"/>
+        <attr name="textProgressSize" format="dimension"/>
+        <attr name="colorProgress" format="reference|color"/>
+        <attr name="colorSecondProgress" format="reference|color"/>
+    </declare-styleable>
+
+</resources>

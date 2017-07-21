@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.meizu.boardgameplatform">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/avalon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".AvaLonGame.JumpActivity.AvalonWelcomeActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".AvaLonGame.JumpActivity.HeroChooseActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".AvaLonGame.JumpActivity.MissionActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".AvaLonGame.JumpActivity.ResultActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Werewolfkill.Activity.Activity.RoleChooseActivity" />
+
+        <activity
+            android:name=".Werewolfkill.Activity.Activity.HomeActivity"
+            android:label="@string/rolechoose_page_label" />
+        <activity
+            android:name=".Werewolfkill.Activity.Activity.WerewolfActivity"
+            android:label="@string/werewolf_page_label" />
+        <activity
+            android:name=".Werewolfkill.Activity.Activity.WitchActivity"
+            android:label="@string/witch_page_label" />
+        <activity
+            android:name=".Werewolfkill.Activity.Activity.SeerActivity"
+            android:label="@string/seer_page_label" />
+        <activity
+            android:name=".Werewolfkill.Activity.Activity.ResultActivity"
+            android:label="@string/result_page_label" />
+        <!--<activity android:name=".Werewolfkill.Activity.Activity.Main2Activity" />-->
+        <activity android:name=".Werewolfkill.Activity.Activity.BaseActivity"></activity>
+    </application>
+
+</manifest>

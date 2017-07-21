@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <!--<ImageView-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="294pt"-->
+        <!--android:scaleType="fitXY"-->
+        <!--android:src="@drawable/avalon_banner" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="145px"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/people_num_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/home_5"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:src="@mipmap/peolpe_text"
+                />
+
+            <TextView
+                android:id="@+id/tv_hum_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="20sp" />
+
+            <SeekBar
+                android:id="@+id/sb_hum_num"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:max="5"
+                android:progress="0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_method"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_weight="0.11"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:text="@string/choose_case"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="16sp"
+                android:layout_weight="0.15" />
+
+            <Switch
+                android:id="@+id/sw_method"
+                android:layout_width="42dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:checked="false"
+                android:layout_weight="0.10" />
+
+        </LinearLayout>
+
+
+        <ImageButton
+            android:id="@+id/btn_start"
+            android:layout_width="164dp"
+            android:layout_height="54dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/start_game" />
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gv_hero_choose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="70dp"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+    </GridView>
+</RelativeLayout>

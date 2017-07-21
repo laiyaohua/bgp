@@ -1,0 +1,38 @@
+package com.meizu.boardgameplatform.AvaLonGame.model;
+
+import java.io.Serializable;
+
+/**
+ * Created by laiyaohua on 17-7-21.
+ */
+
+public class PlayerInfo  implements Serializable {
+    int positive;
+    int name;
+    int imgId;
+
+    public int getImgId() {
+        return imgId;
+    }
+
+    public void setImgId(int imgId) {
+        this.imgId = imgId;
+    }
+
+
+    public int getPositive() {
+        return positive;
+    }
+
+    public void setPositive(int positive) {
+        this.positive = positive;
+    }
+
+    public int getName() {
+        return name;
+    }
+
+    public void setName(int name) {
+        this.name = name;
+    }
+}

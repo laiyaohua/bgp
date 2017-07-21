@@ -6,43 +6,63 @@
     android:layout_height="match_parent"
     tools:context="com.meizu.boardgameplatform.MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal" >
 
-        <ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="72dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/banner" />
-    </LinearLayout>
+    <ImageView
+        android:layout_width="1080dp"
+        android:layout_height="1920dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/main_bg"
+        />
+
 
     <RelativeLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true">
-        <Button
-            android:id="@+id/avalon"
+        android:layout_height="fill_parent"
+        android:id="@+id/relativeLayout"
+        android:layout_centerHorizontal="true">
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="阿瓦隆"
-            tools:layout_editor_absoluteX="145dp"
-            tools:layout_editor_absoluteY="237dp"
-            android:layout_marginTop="200dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true" />
+            android:src="@mipmap/logo"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="128dp" />
+        <!--<Button-->
+            <!--android:id="@+id/avalon"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="阿瓦隆"-->
+            <!--tools:layout_editor_absoluteX="300dp"-->
+            <!--tools:layout_editor_absoluteY="237dp"-->
+            <!--android:layout_marginEnd="115dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_alignParentEnd="true" />-->
 
-        <Button
-            android:id="@+id/werewolfkill"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="狼人杀"
-            tools:layout_editor_absoluteX="145dp"
-            tools:layout_editor_absoluteY="347dp"
-            android:layout_marginTop="71dp"
-            android:layout_below="@+id/avalon"
-            android:layout_alignStart="@+id/avalon" />
+        <!--<Button-->
+            <!--android:id="@+id/werewolfkill"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="狼人杀"-->
+            <!--tools:layout_editor_absoluteX="300dp"-->
+            <!--tools:layout_editor_absoluteY="347dp"-->
+            <!--android:layout_marginTop="52dp"-->
+            <!--android:layout_below="@+id/avalon"-->
+            <!--android:layout_alignStart="@+id/avalon" />-->
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginLeft="50dp"
+            android:src="@mipmap/avalon_btn"
+            android:id="@+id/avalon_btn" />
+        <ImageView
+            android:id="@+id/wolf_btn"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginLeft="200dp"
+            android:src="@mipmap/wolf_btn"
+            />
     </RelativeLayout>
 </RelativeLayout>

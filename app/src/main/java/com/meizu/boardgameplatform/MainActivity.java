@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import com.meizu.boardgameplatform.AvaLonGame.JumpActivity.AvalonWelcomeActivity;
 import com.meizu.boardgameplatform.Werewolfkill.Activity.Activity.HomeActivity;
@@ -16,21 +17,37 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button mButton = (Button) findViewById(R.id.avalon);
-        Button mButton1 = (Button) findViewById(R.id.werewolfkill);
-        mButton.setOnClickListener(new View.OnClickListener() {
+        ImageView iv1 = (ImageView)findViewById(R.id.avalon_btn);
+        ImageView iv2 = (ImageView)findViewById(R.id.wolf_btn);
+        iv1.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, AvalonWelcomeActivity.class);
                 startActivity(intent);
             }
         });
-        mButton1.setOnClickListener(new View.OnClickListener() {
+        iv2.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, HomeActivity.class);
                 startActivity(intent);
             }
         });
+//        Button mButton = (Button) findViewById(R.id.avalon);
+//        Button mButton1 = (Button) findViewById(R.id.werewolfkill);
+//        mButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(MainActivity.this, AvalonWelcomeActivity.class);
+//                startActivity(intent);
+//            }
+//        });
+//        mButton1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+//                startActivity(intent);
+//            }
+//        });
     }
 }

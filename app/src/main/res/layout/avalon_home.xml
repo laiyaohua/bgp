@@ -26,34 +26,35 @@
 
             <ImageView
                 android:id="@+id/people_num_pic"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:src="@mipmap/home_5"
                 />
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_marginStart="10dp"
                 android:src="@mipmap/peolpe_text"
                 />
 
-            <TextView
-                android:id="@+id/tv_hum_num"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:textColor="@android:color/holo_red_dark"
-                android:textSize="20sp" />
+            <!--<TextView-->
+                <!--android:id="@+id/tv_hum_num"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="16dp"-->
+                <!--android:textColor="@android:color/holo_red_dark"-->
+                <!--android:textSize="20sp" />-->
 
             <SeekBar
                 android:id="@+id/sb_hum_num"
-                android:layout_width="match_parent"
+                android:layout_width="180dp"
                 android:layout_height="match_parent"
                 android:layout_marginEnd="20dp"
                 android:layout_marginStart="20dp"
                 android:max="5"
-                android:progress="0" />
+                android:progress="0"
+                android:layout_weight="0.32" />
         </LinearLayout>
 
         <LinearLayout

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">boardgameplatform</string>
+    <string name="app_name">BGB</string>
     <string name="start_game">start game</string>
     <string name="human_num">human numbers</string>
     <string name="defender">defender</string>

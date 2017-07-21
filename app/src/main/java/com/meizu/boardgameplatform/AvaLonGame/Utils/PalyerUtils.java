@@ -36,7 +36,6 @@ public class PalyerUtils {
 
     public static ArrayList<PlayerInfo> getPlayerIdList(int playerId) {
         ArrayList<PlayerInfo> playerInfoList = new ArrayList<>();
-        ArrayList<Integer> playerIdList = new ArrayList<>();
         switch (playerId) {
             case 5:
 

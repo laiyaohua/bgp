@@ -7,8 +7,6 @@ import java.io.Serializable;
  */
 
 public class PlayerInfo  implements Serializable {
-    int positive;
-    int name;
     int imgId;
 
     public int getImgId() {
@@ -19,20 +17,4 @@ public class PlayerInfo  implements Serializable {
         this.imgId = imgId;
     }
 
-
-    public int getPositive() {
-        return positive;
-    }
-
-    public void setPositive(int positive) {
-        this.positive = positive;
-    }
-
-    public int getName() {
-        return name;
-    }
-
-    public void setName(int name) {
-        this.name = name;
-    }
 }

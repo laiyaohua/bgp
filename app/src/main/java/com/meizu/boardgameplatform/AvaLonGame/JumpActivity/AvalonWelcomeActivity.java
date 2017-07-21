@@ -80,15 +80,16 @@ public class AvalonWelcomeActivity extends AppCompatActivity {
         mLlmethod = findViewById(R.id.ll_method);
         player_count = (ImageView)findViewById(R.id.people_num_pic);
         mSbHumNum = (SeekBar) findViewById(R.id.sb_hum_num);
-        mTvHumNum = (TextView) findViewById(R.id.tv_hum_num);
+
+//        mTvHumNum = (TextView) findViewById(R.id.tv_hum_num);
         mSwMethod = (Switch) findViewById(R.id.sw_method);
         mButton = (ImageButton) findViewById(R.id.btn_start);
         mGridView = (GridView) findViewById(R.id.gv_hero_choose);
 
         mHeroDataList = HeroListUtils.getHeroIdList(mCurrentHumNum, false);
 
-        mTvHumNum.setText(String.valueOf(mCurrentHumNum));
-        mSbHumNum.setProgress(mCurrentHumNum - 5);
+//        mTvHumNum.setText(String.valueOf(mCurrentHumNum));
+//        mSbHumNum.setProgress(mCurrentHumNum - 5);
         mSwMethod.setChecked(mHasModer);
 
         if (mCurrentHumNum < 8) {
@@ -110,7 +111,27 @@ public class AvalonWelcomeActivity extends AppCompatActivity {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
                 mCurrentHumNum = i + 5;
-                mTvHumNum.setText(String.valueOf(mCurrentHumNum));
+//                mTvHumNum.setText(String.valueOf(mCurrentHumNum));
+                switch (mCurrentHumNum){
+                    case 5:
+                        player_count.setImageResource(R.mipmap.home_5);
+                        break;
+                    case 6:
+                        player_count.setImageResource(R.mipmap.home_6);
+                        break;
+                    case 7:
+                        player_count.setImageResource(R.mipmap.home_7);
+                        break;
+                    case 8:
+                        player_count.setImageResource(R.mipmap.home_8);
+                        break;
+                    case 9:
+                        player_count.setImageResource(R.mipmap.home_9);
+                        break;
+                    case 10:
+                        player_count.setImageResource(R.mipmap.home_10);
+                        break;
+                }
                 if (mCurrentHumNum <= 8) {
                     mLlmethod.setVisibility(View.INVISIBLE);
                 } else {
@@ -151,4 +172,5 @@ public class AvalonWelcomeActivity extends AppCompatActivity {
         super.onBackPressed();
         saveData();
     }
+
 }

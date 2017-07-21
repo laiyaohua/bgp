@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">阿瓦隆</string>
+    <!--<string name="app_name">阿瓦隆</string>-->
     <string name="assassin">刺客</string>
     <string name="defender">忠臣</string>
     <string name="human_num">选择人数</string>

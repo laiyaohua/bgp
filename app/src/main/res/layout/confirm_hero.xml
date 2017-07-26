@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:text="1"
             android:textColor="@android:color/holo_red_dark"
-            android:textSize="20sp"
+            android:textSize="40sp"
             />
 
         <TextView
@@ -27,7 +27,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="号玩家确认人物"
-            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textSize="30sp"
             />
     </LinearLayout>
 

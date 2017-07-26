@@ -86,11 +86,12 @@ public class AvalonWelcomeActivity extends AppCompatActivity {
         mButton = (ImageButton) findViewById(R.id.btn_start);
         mGridView = (GridView) findViewById(R.id.gv_hero_choose);
 
+        mCurrentHumNum = 5;
         mHeroDataList = HeroListUtils.getHeroIdList(mCurrentHumNum, false);
 
 //        mTvHumNum.setText(String.valueOf(mCurrentHumNum));
 //        mSbHumNum.setProgress(mCurrentHumNum - 5);
-        mSwMethod.setChecked(mHasModer);
+        mSwMethod.setChecked(false);
 
         if (mCurrentHumNum < 8) {
             mLlmethod.setVisibility(View.INVISIBLE);

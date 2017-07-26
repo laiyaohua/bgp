@@ -1,5 +1,6 @@
 package com.meizu.boardgameplatform;
 
+import android.content.ComponentName;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -29,8 +30,13 @@ public class MainActivity extends AppCompatActivity {
         iv2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+//                Intent intent = new Intent(MainActivity.this,HomeActivity.class);
+//                intent.setComponent(new ComponentName("com.werewolfgame.werewolfgame",".activity.MainActivity"));
+                Intent intent = new Intent();
+                intent.setAction("com.intent.action.werewwolfgame");
+//                intent.setComponent(new ComponentName("com.werewolfgame.werewolfgame","com.werewolfgame.werewolfgame.Activity.Activity.MainActivity"));
                 startActivity(intent);
+
             }
         });
 //        Button mButton = (Button) findViewById(R.id.avalon);

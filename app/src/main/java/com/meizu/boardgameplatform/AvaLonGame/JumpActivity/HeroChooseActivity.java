@@ -73,7 +73,7 @@ public class HeroChooseActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (player == HeroListUtils.mHeroDataList.size()) {
-                    mTvTip.setText("全部确认完毕，将手机交给第一个队长");
+                    mTvTip.setText("确认完毕，请第一任队长带队");
                     mHeroImg.setImageResource(R.mipmap.avalon);
                     mBtnConfirm.setVisibility(View.GONE);
                     mBtnFinish.setVisibility(View.GONE);
